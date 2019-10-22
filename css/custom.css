@@ -1,0 +1,26 @@
+
+.main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.container{
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    align: center ;
+
+    margin: auto;
+}
+
+input[type="radio"]{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
