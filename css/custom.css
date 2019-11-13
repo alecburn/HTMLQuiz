@@ -1,13 +1,14 @@
 
 .main {
-    margin-left: 140px; /* Same width as the sidebar + left position in px */
     font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-}
+   }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+
+#submitdiv{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
 
 .container{
@@ -16,11 +17,78 @@
     align-self: center;
     align: center ;
 
-    margin: auto;
 }
 
 input[type="radio"]{
     visibility: hidden;
     height: 0;
     width: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    .main{
+        margin-left: 160px;
+        padding: 0px 10px;
+    }
+    #toggle {
+        display: none;
+    }
+
+    #sidebar {
+        left: 15px;
+        top: 30%;
+        position: fixed;
+    }
+
+    #sidenav {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    #sidenav label {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fafeff;
+        display: block;
+    }
+
+    #sidenav label:hover {
+        color: #f1b100;
+    }
+
+    #top {
+        width: 400px;
+        table-layout: fixed;
+        border-collapse: collapse;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+
+    #bot {
+        width: 400px;
+        table-layout: fixed;
+        border-collapse: collapse;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+   #sidenav {
+       width: auto;
+       height: auto;
+       position: absolute;
+       left: 50%;
+       margin-left: -50px;
+       background-color: #111;
+   }
 }

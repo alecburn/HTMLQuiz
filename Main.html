@@ -24,64 +24,76 @@
 
 </head>
 <body>
-<div>
+<div id="sidenav">
     <div class="container-fluid">
-        <button class="hidden-lg" type="button" data-toggle="collapse" data-target="#sidebar">Toggle</button>
+
         <div id="sidebar" class="btn-group-vertical" data-toggle="buttons">
             <label class="btn btn-primary active" id="easylbl">
-                <input type="radio" name="options" id="easy" autocomplete="off" checked> Easy
+                <input type="radio" name="options" id="easy" checked> Easy
             </label>
             <label class="btn btn-primary">
-                <input type="radio" name="options" id="med" autocomplete="off"> Medium
+                <input type="radio" name="options" id="med"> Medium
             </label>
             <label class="btn btn-primary">
-                <input type="radio" name="options" id="hard" autocomplete="off"> Hard
+                <input type="radio" name="options" id="hard"> Hard
             </label>
         </div>
     </div>
 </div>
 
+<!-- todo add styling -->
+<!-- todo remove autocomplete in radio buttons -->
 
-<div class="main">
+<div id="main" class="main">
 
-    <div class="jumbotron card card-image" align="center">
+    <div id="big" class="jumbotron card card-image" align="center">
 
-            <form accept-charset="UTF-8" action="#" id="new_user" method="post">
-                <div class="myDiv" id="myDiv">
-                    Hello and welcome to my HTML quiz choose your difficulty to get started!
-                </div>
-            </form>
+        <form accept-charset="UTF-8" action="#" id="new_user" method="post">
+            <div class="myDiv" id="myDiv">
+                Hello and welcome to my HTML quiz choose your difficulty to get started!
+            </div>
+        </form>
 
 
     </div>
 
-<div id="container" align="center">
-            <div id="myButtons" class="btn-group-vertical" data-toggle="buttons"  style="display: none;">
-                <label class="btn btn-primary active">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1
-                </label>
+    <div id="container" align="center">
+        <div id="myButtons" class="btn-group-vertical" data-toggle="buttons" style="display: none;">
 
-                <label class="btn btn-primary">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
-                </label>
-                <label class="btn btn-primary">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
-                </label>
-                <label class="btn btn-primary">
-                    <input type="radio" name="options" id="option4" autocomplete="off"> Radio 4
-                </label>
-            </div>
-<div>
-            <button type="button" id="easysubmit" style="display: none;">submit</button>
-            <button type="button" id="medsubmit" style="display: none;">submit</button>
-            <button type="button" id="hardsubmit" style="display: none;">submit</button>
+                <div id="top" class="p-2 flex-lg-fill bd-highlight">
+                    <label class="btn btn-primary active">
+                        <input type="radio" name="options" id="option1" checked> Radio 1
+                    </label>
+
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option2"> Radio 2
+                    </label>
+                </div>
+                <div id="bot" class="p-2 flex-lg-fill bd-highlight">
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option3"> Radio 3
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option4"> Radio 4
+                    </label>
+                </div>
+        </div>
+    </div>
+
+
+<!-- todo move style into class -->
+<div id="submitdiv" align="center">
+    <button type="button" id="easysubmit" style="display: none;">Submit</button>
+    <button type="button" id="medsubmit" style="display: none;">Submit</button>
+    <button type="button" id="hardsubmit" style="display: none;">Submit</button>
 </div>
-        <div id="correctanswer"></div>
+<div id="correctanswer"></div>
 </div>
 
 
 </div>
 <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 
 </html>
